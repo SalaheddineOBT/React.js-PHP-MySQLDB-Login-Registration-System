@@ -57,7 +57,9 @@
     -webkit-backdrop-filter: blur( 6px );
     border-radius: 10px;
     border: 2px solid rgba( 255, 255, 255, 0.18 );
-    
+}
+.name{
+    color: #E94F3D;
 }
 nav{
     width: 100%;

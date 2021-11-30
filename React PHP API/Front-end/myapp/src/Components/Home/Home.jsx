@@ -6,7 +6,7 @@ export default class Home extends Component{
         return (
             <div className="home">
                 <div>
-                    <h1>Welcome {this.props.name}</h1>
+                    <h1>Welcome <span className="name">{this.props.name}</span></h1>
                     <button className="btns" onClick={()=>this.props.logout()}>Logout</button>
                 </div>
                 <footer>&copy; 2020 - {d.getFullYear()} | Salaheddine Solicode</footer>
