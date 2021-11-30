@@ -14,10 +14,6 @@ function App() {
       name:''
   };
 
-  const p={
-    user:''
-  }
-
   const [Val,setVal]=useState(user);
   const [Err,setErr]=useState({message:""});
   const [pp,setP]=useState(p);
@@ -42,13 +38,11 @@ function App() {
     const l=await LoadData(del);
     if(l[0].Code){
       setP({...pp,user:l[0].user});
-      if(pp.user){
-        const h=await Homing(pp);
-        if(h[0].Code){
-          setVal({email:del.email,password:del.password,name:h[0].User});
-        }else{
-          setErr({message:h[0].Message});
-        }
+      const h=await Homing({user:l[0].user});
+      if(h[0].Code){
+        setVal({email:del.email,password:del.password,name:h[0].User});
+      }else{
+        setErr({message:h[0].Message});
       }
     }else{
       setErr({message:l[0].Message});
