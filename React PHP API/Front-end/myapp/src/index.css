@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+    font-family: 'Shippori Antique', sans-serif;
+}
+.App{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./Image/Back.jpg);
+}
+.container{
+    border-radius: 2rem;
+    padding:1rem;
+    width: 23rem;
+    margin-top: 2rem;
+}
+.FormReg{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: .5rem;
+    width: 100%;
+    padding: 1rem;
+    height: 100%;
+    background: rgba(58, 1, 1, 0.2);
+    box-shadow: 10px 50px 32px 0 rgba(41, 41, 114, 0);
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    position: relative;
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.FormLog{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: .5rem;
+    position: relative;
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    width: 100%;
+    padding: 1rem;
+    height: 100%;
+    background: rgba(58, 1, 1, 0.2);
+    box-shadow: 10px 50px 32px 0 rgba(41, 41, 114, 0);
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;left: 0;
+    background: rgba(170, 170, 170, 0.185);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+ul{
+    display: flex;
+    margin-right: 5rem;
+    padding: .6rem;
+    background: #7d55588c;
+}
+a{
+    font-size: 1.3rem;
+    padding:1rem;
+    color: #fff;
+    font-weight: 800;
+}
+a.active{
+    color: rgb(235, 198, 150);
+}
+NavLink{
+    font-size: 100rem;
+}
+.first{
+    border-right: 1px solid #fff;
+}
+.secnde{
+    border-left: 2px solid #fff;
+}
+h1{
+    text-align: center;
+    margin-bottom: .7rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.FormReg table{
+    width: 100%;
+    height: 100%;
+}
+th{
+    text-align: left;
+    padding: .3rem;
+}
+.err{
+    font-size: 1rem;
+    color: red;
+    padding-left:.4rem ;
+    padding-top: .2rem;
+    font-weight: 700;
+}
+input{
+    padding: .4rem;
+    padding-left: .6rem;
+    font-size: .85rem;
+    border-radius: .8rem;
+    border:none;
+}
+label{
+    color: #fff;
+    font-size: 1.1rem;
+    padding: .5rem;
+    padding-left: .3rem;
+    font-weight: 700;
+}
+button{
+    margin: auto;
+    margin-top: 1.2rem;
+    width: 70%;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: .3rem;
+    background: #0080ff;
+    color: #fff;
+    margin-bottom: .2rem;
+    font-size: 1.1rem;
+}
+button:hover{
+    opacity: 90%;
+}
+.divErr{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    background: red;
+    color: white;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+input:hover{
+    opacity: 90%;
+}
+.home{
+    padding: 3rem;
+    width: 100%;
+    background: #EEE;
+    height: 100vh;
+    text-align: center;
+    overflow: scroll;
+}
+.home h1{
+    color: #555;
+}
+.home .btns{
+    width: 8rem;
+}
+footer{
+    clear: both;
+    margin-top: 20rem;
+    color: #444;
+    text-align: center;
+}
+
+@-webkit-keyframes slide-top {
+0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+}
+100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+@keyframes slide-top {
+0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+}
+100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+
+@-webkit-keyframes slide-bottom {
+0% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+}
+100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+@keyframes slide-bottom {
+0% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+}
+100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}    
