@@ -29,14 +29,13 @@ export default function Register(){
         if(Val.password===Val.confirme){
             const reg=await Registered(Val);
             if(reg[0].Code){
-                alert(reg[0].Message);
-                setErr({Message:""});
+                setErr({Message:"",Message1:reg[0].Message});
             }else{
                 err=reg[0].Message;
-                setErr({Message:err});
+                setErr({Message:err,Message1:''});
             }
         }else
-        setErr({Message:'Confirme Password Incorrect !'});
+        setErr({Message:'Confirme Password Incorrect !',Message1:''});
     };
 
     return (
@@ -45,7 +44,8 @@ export default function Register(){
 
             <h1>Register Form</h1>
 
-            { (Err.Message) ? (<div className="divErr">{Err.Message}</div>) : null }
+            { (Err.Message && !Err.Message1) ? (<div className="divErr">{Err.Message}</div>) : null }
+            { (Err.Message1 && !Err.Message) ? (<div className="divErr1">{Err.Message1}</div>) : null }
 
             <label htmlFor="username">User Name :</label>
             <input type="text" placeholder="User Name" name="username" value={Val.username} onChange={Changer} />

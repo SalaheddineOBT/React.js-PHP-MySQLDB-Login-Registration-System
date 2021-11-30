@@ -41,6 +41,15 @@
     -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+.divErr1{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    background: rgb(67, 151, 99);
+    color: white;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
 .FormLog{
     display: grid;
     grid-template-columns: 100%;
